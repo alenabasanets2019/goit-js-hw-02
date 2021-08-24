@@ -1,12 +1,7 @@
 "usestrict"
 
 const formatString = function (string) {
-    let newString = string;
-    if (string.split('').length > 40) {
-        let array = string.split('', 40);
-        newString = array.join('') + '...';
-    }
-    return newString;
+    return string.length > 40 ? `${string.slice(0, 40)}...` : string;
 };
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
 console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.'));

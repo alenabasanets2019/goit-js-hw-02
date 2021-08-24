@@ -1,7 +1,7 @@
 "usestrict"
 
 const checkForSpam = function(message) {
-    if (message.toLowerCase().indexOf('spam') != -1 || message.toLowerCase().indexOf('sale') != -1) {
+    if (message.toLowerCase().indexOf('spam') !== -1 || message.toLowerCase().indexOf('sale') !== -1) {
         return true;
     } else return false;
 };
